@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "https://friends.roblox.com/v*/users/*/unfriend",
+            "resourceTypes": ["xmlhttprequest"]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "https://auth.roblox.com/v*/logout",
+            "resourceTypes": ["xmlhttprequest"]
+        }
+    }
+]

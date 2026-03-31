@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": { "extensionPath": "/friendCarousel/custom/length.js" }
+        },
+        "condition": {
+            "urlFilter": "https://js.rbxcdn.com/019b7b41c27e8b1e02ef2c3dad20b7bde7d704829e8f61b99040fd6f32804a77-PlacesList.js",
+            "resourceTypes": ["script"]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": { "extensionPath": "/friendCarousel/custom/scrollAndPopover.css" }
+        },
+        "condition": {
+            "urlFilter": "https://css.rbxcdn.com/80954aa41603abbf646d230b7a679990f52861d1914690de963f66939d32a26b-SearchLandingPage.css",
+            "resourceTypes": ["stylesheet"]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 1,
+        "action": {
+            "type": "redirect",
+            "redirect": { "extensionPath": "/friendCarousel/custom/scrollAndPopover2.css" }
+        },
+        "condition": {
+            "urlFilter": "https://css.rbxcdn.com/d234aa0d90ac77b5d39bb93325a7e02c02909df97b55c0eab0d9c55bbbf8c122-PlacesList.css",
+            "resourceTypes": ["stylesheet"]
+        }
+    }
+]

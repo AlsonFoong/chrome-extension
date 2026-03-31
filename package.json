@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@types/chrome": "^0.0.299",
+    "copyfiles": "^2.4.1"
+  },
+  "scripts": {
+    "build": "rmdir /s /q distributable && copyfiles source/**/* -u 1 -e \"**/*.ts\" distributable && tsc"
+  }
+}

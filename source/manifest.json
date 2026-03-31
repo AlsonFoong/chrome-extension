@@ -1,0 +1,56 @@
+{
+    "manifest_version": 3,
+    "name": "[REDACTED]",
+    "description": "Improves the user experience on the Roblox website.",
+    "version": "6.1.2",
+    "action": {
+        "default_title": "[REDACTED]",
+        "default_popup": "/popup/popup.html"
+    },
+    "permissions": [
+        "declarativeNetRequest",
+        "debugger",
+        "webRequest",
+        "tabs",
+        "notifications",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://*.roblox.com/*",
+        "https://*.rbxcdn.com/*"
+    ],
+    "background": {
+        "service_worker": "serviceWorker.js",
+        "type": "module"
+    },
+    "declarative_net_request": {
+        "rule_resources": [
+            {
+                "id": "ruleset_AvatarHeadshotURLRedirect",
+                "enabled": true,
+                "path": "/rulesets/avatarHeadshotURLRedirect.json"
+            },
+            {
+                "id": "ruleset_FriendCarouselExtension",
+                "enabled": true,
+                "path": "/rulesets/friendCarouselExtension.json"
+            },
+            {
+                "id": "ruleset_XhrBlocker",
+                "enabled": true,
+                "path": "/rulesets/xhrBlocker.json"
+            }
+        ]
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "/friendCarousel/custom/length.js",
+                "/friendCarousel/custom/scrollAndPopover.css",
+                "/friendCarousel/custom/scrollAndPopover2.css",
+                "/utils/RBLX_Tilt_Primary_Black.png"
+            ],
+            "matches": [ "https://*.roblox.com/*" ]
+        }
+    ]
+}

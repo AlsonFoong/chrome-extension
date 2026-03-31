@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="popup.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <h1 class="lexend-deca-large">Hello world!</h1>
+            <p class="lexend-deca-thin">
+                [REDACTED] is a Chrome extension being developed by <b>[REDACTED]</b> on Roblox, and was made
+                in response to a desire to both improve the user experience on the Roblox website, as well
+                as further my knowledge in programming. I hope this extension has afforded you much-needed
+                quality of life improvements!
+            </p>
+        </div>
+        <hr>
+        <div>
+            <h2 class="lexend-deca-large">Options:</h2>
+            <p class="lexend-deca-thin">
+                Each checkbox represents a feature that is offered by [REDACTED]. To disable a feature, simply
+                untick its respective checkbox.
+            </p>
+            <form>
+                <div class="checkbox-field">
+                    <input type="checkbox" id="friend-activity-tracker" />
+                    <label id="friend-activity-tracker-label" for="friend-activity-tracker" class="options lexend-deca-thin">
+                        Friend Activity Tracker
+                    </label>
+                </div>
+                <p class="checkbox-description">Sends native notifications to alert you of friends entering experiences! Stops working when www.roblox.com is closed.</p>
+                <div class="checkbox-field">
+                    <input type="checkbox" id="friend-carousel-extension" />
+                    <label id="friend-carousel-extension-label" for="friend-carousel-extension" class="options lexend-deca-thin">
+                        Friend Carousel Extension
+                    </label>
+                </div>
+                <p class="checkbox-description">Extends the friend carousel on the home page to display 50 friends! Disabling only takes effect in new tabs.</p>
+                <div class="checkbox-field">
+                    <input type="checkbox" id="avatar-headshot-url-redirect" />
+                    <label id="avatar-headshot-url-redirect-label" for="avatar-headshot-url-redirect" class="options lexend-deca-thin">
+                        Enlargement of Profile Icons
+                    </label>
+                </div>
+                <p class="checkbox-description">Automatically enlarges profile icons when you drag them into a new tab. Have fun viewing avatars!</p>
+                <div class="checkbox-field">
+                    <input type="checkbox" id="unfriend-blocker" />
+                    <label id="unfriend-blocker-label" for="unfriend-blocker" class="options lexend-deca-thin">
+                        Unfriend Blocker
+                    </label>
+                </div>
+                <p class="checkbox-description">Don't want to lose the people you love? Enable this to prevent accidents with the unfriend button! Only works with the website.</p>
+                <div class="checkbox-field">
+                    <input type="checkbox" id="logout-blocker" />
+                    <label id="logout-blocker-label" for="logout-blocker" class="options lexend-deca-thin">
+                        Logout Blocker
+                    </label>
+                </div>
+                <p class="checkbox-description">This setting will stop any attempt at logging out on the website. No more awkward encounters with the login page!</p>
+            </form>
+        </div>
+        <script src="popupWorker.js"></script>
+    </body>
+</html>
